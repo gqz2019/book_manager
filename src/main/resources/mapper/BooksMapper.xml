@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BookMapper">
+
+    <resultMap id="BaseResultMap" type="com.gqz.pojo.Book">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="bookName" column="book_name" jdbcType="VARCHAR"/>
+            <result property="pressHome" column="press_home" jdbcType="VARCHAR"/>
+            <result property="bookPrice" column="book_price" jdbcType="DOUBLE"/>
+            <result property="bookNum" column="book_num" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,book_name,press_home,
+        book_price,book_num
+    </sql>
+</mapper>
